@@ -19,7 +19,7 @@ def myParser():
 
 class CaptchaData(Dataset):
     def __init__(self, data_path, num_class=36, num_char=4, 
-                 transform=None, target_transform=None, alphabet=alphabet):
+                 transform=None, target_transform=None):
         super(Dataset, self).__init__()
         source = [str(i) for i in range(0, 10)]
         source += [chr(i) for i in range(97, 97+26)]
